@@ -30,33 +30,66 @@ public class CheckListServiceImpl implements CheckListService {
 
     @Override
     public CheckList addNewMeetingChecklist(CheckList ch) {
-        CheckList newCh = new CheckList();
-        newCh.setId(ch.getId());
-        newCh.setSendQuestionnaire(ch.isSendQuestionnaire());
-        newCh.setCreateHubPage(ch.isCreateHubPage());
-        newCh.setScheduleDeepDiveMeeting(ch.isScheduleDeepDiveMeeting());
-        newCh.setDetermineCustomer(ch.isDetermineCustomer());
-        newCh.setDisscussAddons(ch.isDisscussAddons());
-        newCh.setProxySetting(ch.isProxySetting());
-        newCh.setTrendExport(ch.isTrendExport());
-        newCh.setExplainCloudMigrationTool(ch.isExplainCloudMigrationTool());
-        newCh.setNetworking(ch.isNetworking());
-        newCh.setChangeCloud(ch.isChangeCloud());
-        newCh.setActionUi(ch.isActionUi());
-        newCh.setPatching(ch.isPatching());
-        newCh.setSiteBuilder(ch.isSiteBuilder());
-        newCh.setWorkArounds(ch.isWorkArounds());
-        newCh.setSourceTrees(ch.isSourceTrees());
-        newCh.setGap(ch.isGap());
-        newCh.setComing(ch.isComing());
-        newCh.setPasswordNotify(ch.isPasswordNotify());
-        newCh.setMethodToMinimize(ch.isMethodToMinimize());
-        newCh.setDetermineNetworking(ch.isDetermineNetworking());
-        newCh.setChangeRoute(ch.isChangeRoute());
-        newCh.setTestingValidation(ch.isTestingValidation());
-        newCh.setTargetDates(ch.isTargetDates());
-        newCh.setAddmember(ch.isAddmember());
-        checkListRepository.save(newCh);
+        CheckList newCh = null;
+        Optional<CheckList> existId = checkListRepository.findById(ch.getId());
+
+        if(existId.isPresent()){
+            newCh = existId.get();
+            newCh.setId(ch.getId());
+            newCh.setSendQuestionnaire(ch.isSendQuestionnaire());
+            newCh.setCreateHubPage(ch.isCreateHubPage());
+            newCh.setScheduleDeepDiveMeeting(ch.isScheduleDeepDiveMeeting());
+            newCh.setDetermineCustomer(ch.isDetermineCustomer());
+            newCh.setDisscussAddons(ch.isDisscussAddons());
+            newCh.setProxySetting(ch.isProxySetting());
+            newCh.setTrendExport(ch.isTrendExport());
+            newCh.setExplainCloudMigrationTool(ch.isExplainCloudMigrationTool());
+            newCh.setNetworking(ch.isNetworking());
+            newCh.setChangeCloud(ch.isChangeCloud());
+            newCh.setActionUi(ch.isActionUi());
+            newCh.setPatching(ch.isPatching());
+            newCh.setSiteBuilder(ch.isSiteBuilder());
+            newCh.setWorkArounds(ch.isWorkArounds());
+            newCh.setSourceTrees(ch.isSourceTrees());
+            newCh.setGap(ch.isGap());
+            newCh.setComing(ch.isComing());
+            newCh.setPasswordNotify(ch.isPasswordNotify());
+            newCh.setMethodToMinimize(ch.isMethodToMinimize());
+            newCh.setDetermineNetworking(ch.isDetermineNetworking());
+            newCh.setChangeRoute(ch.isChangeRoute());
+            newCh.setTestingValidation(ch.isTestingValidation());
+            newCh.setTargetDates(ch.isTargetDates());
+            newCh.setAddmember(ch.isAddmember());
+            checkListRepository.save(newCh);
+        }else{
+            newCh= new CheckList();
+            newCh.setId(ch.getId());
+            newCh.setSendQuestionnaire(ch.isSendQuestionnaire());
+            newCh.setCreateHubPage(ch.isCreateHubPage());
+            newCh.setScheduleDeepDiveMeeting(ch.isScheduleDeepDiveMeeting());
+            newCh.setDetermineCustomer(ch.isDetermineCustomer());
+            newCh.setDisscussAddons(ch.isDisscussAddons());
+            newCh.setProxySetting(ch.isProxySetting());
+            newCh.setTrendExport(ch.isTrendExport());
+            newCh.setExplainCloudMigrationTool(ch.isExplainCloudMigrationTool());
+            newCh.setNetworking(ch.isNetworking());
+            newCh.setChangeCloud(ch.isChangeCloud());
+            newCh.setActionUi(ch.isActionUi());
+            newCh.setPatching(ch.isPatching());
+            newCh.setSiteBuilder(ch.isSiteBuilder());
+            newCh.setWorkArounds(ch.isWorkArounds());
+            newCh.setSourceTrees(ch.isSourceTrees());
+            newCh.setGap(ch.isGap());
+            newCh.setComing(ch.isComing());
+            newCh.setPasswordNotify(ch.isPasswordNotify());
+            newCh.setMethodToMinimize(ch.isMethodToMinimize());
+            newCh.setDetermineNetworking(ch.isDetermineNetworking());
+            newCh.setChangeRoute(ch.isChangeRoute());
+            newCh.setTestingValidation(ch.isTestingValidation());
+            newCh.setTargetDates(ch.isTargetDates());
+            newCh.setAddmember(ch.isAddmember());
+            checkListRepository.save(newCh);
+        }
         return newCh;
     }
 

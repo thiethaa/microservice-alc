@@ -30,23 +30,45 @@ public class QuestionnareServiceImpl implements QuestionnareService{
 
     @Override
     public Questionnare addNewQuestionnare(Questionnare questionnare) {
-        Questionnare newQuestionnare = new Questionnare();
-        newQuestionnare.setId(questionnare.getId());
-        newQuestionnare.setWebCtrlVersion(questionnare.getWebCtrlVersion());
-        newQuestionnare.setWebCtrlIp(questionnare.getWebCtrlIp());
-        newQuestionnare.setAddOnsList(questionnare.getAddOnsList());
-        newQuestionnare.setOldAddOns(questionnare.getOldAddOns());
-        newQuestionnare.setAlertMethod(questionnare.getAlertMethod());
-        newQuestionnare.setInNotification(questionnare.getInNotification());
-        newQuestionnare.setDbBrandAndVersion(questionnare.getDbBrandAndVersion());
-        newQuestionnare.setUsingHierarchial(questionnare.getUsingHierarchial());
-        newQuestionnare.setDirectorySize(questionnare.getDirectorySize());
-        newQuestionnare.setDbSize(questionnare.getDbSize());
-        newQuestionnare.setControllerNo(questionnare.getControllerNo());
-        newQuestionnare.setPointsNo(questionnare.getPointsNo());
-        newQuestionnare.setSourceNo(questionnare.getSourceNo());
-        newQuestionnare.setSampleNo(questionnare.getSampleNo());
-        questionnareRepository.save(newQuestionnare);
+        Questionnare newQuestionnare = null;
+        Optional<Questionnare> existId = questionnareRepository.findById(questionnare.getId());
+        if(existId.isPresent()){
+            newQuestionnare= existId.get();
+            newQuestionnare.setId(questionnare.getId());
+            newQuestionnare.setWebCtrlVersion(questionnare.getWebCtrlVersion());
+            newQuestionnare.setWebCtrlIp(questionnare.getWebCtrlIp());
+            newQuestionnare.setAddOnsList(questionnare.getAddOnsList());
+            newQuestionnare.setOldAddOns(questionnare.getOldAddOns());
+            newQuestionnare.setAlertMethod(questionnare.getAlertMethod());
+            newQuestionnare.setInNotification(questionnare.getInNotification());
+            newQuestionnare.setDbBrandAndVersion(questionnare.getDbBrandAndVersion());
+            newQuestionnare.setUsingHierarchial(questionnare.getUsingHierarchial());
+            newQuestionnare.setDirectorySize(questionnare.getDirectorySize());
+            newQuestionnare.setDbSize(questionnare.getDbSize());
+            newQuestionnare.setControllerNo(questionnare.getControllerNo());
+            newQuestionnare.setPointsNo(questionnare.getPointsNo());
+            newQuestionnare.setSourceNo(questionnare.getSourceNo());
+            newQuestionnare.setSampleNo(questionnare.getSampleNo());
+            questionnareRepository.save(newQuestionnare);
+        }else {
+            newQuestionnare = new Questionnare();
+            newQuestionnare.setId(questionnare.getId());
+            newQuestionnare.setWebCtrlVersion(questionnare.getWebCtrlVersion());
+            newQuestionnare.setWebCtrlIp(questionnare.getWebCtrlIp());
+            newQuestionnare.setAddOnsList(questionnare.getAddOnsList());
+            newQuestionnare.setOldAddOns(questionnare.getOldAddOns());
+            newQuestionnare.setAlertMethod(questionnare.getAlertMethod());
+            newQuestionnare.setInNotification(questionnare.getInNotification());
+            newQuestionnare.setDbBrandAndVersion(questionnare.getDbBrandAndVersion());
+            newQuestionnare.setUsingHierarchial(questionnare.getUsingHierarchial());
+            newQuestionnare.setDirectorySize(questionnare.getDirectorySize());
+            newQuestionnare.setDbSize(questionnare.getDbSize());
+            newQuestionnare.setControllerNo(questionnare.getControllerNo());
+            newQuestionnare.setPointsNo(questionnare.getPointsNo());
+            newQuestionnare.setSourceNo(questionnare.getSourceNo());
+            newQuestionnare.setSampleNo(questionnare.getSampleNo());
+            questionnareRepository.save(newQuestionnare);
+        }
         return newQuestionnare;
     }
 
