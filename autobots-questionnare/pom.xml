@@ -7,7 +7,6 @@
         <groupId>org.autobots</groupId>
         <artifactId>alc-autobots</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>com.autobots</groupId>
