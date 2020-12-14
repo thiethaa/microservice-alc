@@ -35,5 +35,33 @@ public class CheckList {
     private boolean changeRoute;
     private boolean testingValidation;
     private boolean targetDates;
-    private boolean addmember;
+    private boolean addMember;
+
+    private boolean webCtrlAccess;
+    private boolean webCtrlKey;
+    private boolean bacLicenses;
+    private boolean upgradeSystem;
+    private boolean cleanOutWebRoot;
+    private boolean notUsingDerby;
+    private boolean scheduleMigration;
+
+    private boolean updateAllDevice;
+
+    private boolean orderTosibox;
+    private boolean digitalNetTicket;
+    private boolean staticIpAddress;
+    private boolean switchPort;
+    private boolean firewallRules;
+    private boolean configureTosibox;
+    private boolean shipTosibox;
+    private boolean veryfyTosiboxbyOwner;
+
+    private boolean implementAwsNetwork;
+    private boolean createEmptyAwsSystem;
+    private boolean giveToolAndPassword;
+    private boolean giveOwnerWebCtrlUrl;
+
+    private boolean updateBbmd;
+    private boolean changeDefaultRoute;
+    private boolean makeBbmdDevice;
 }

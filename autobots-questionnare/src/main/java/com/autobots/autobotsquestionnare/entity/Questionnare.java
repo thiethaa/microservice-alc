@@ -27,6 +27,13 @@ public class Questionnare {
     private String sourceNo;
     private String sampleNo;
 
+    private String controllerModel;
+    private String controllerIpAddress;
+    private String controllerFirmware;
+    private String bacNet;
+    private String internetProxy;
+    private String hardwareVpn;
+
 
 
 

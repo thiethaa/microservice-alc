@@ -59,7 +59,36 @@ public class CheckListServiceImpl implements CheckListService {
             newCh.setChangeRoute(ch.isChangeRoute());
             newCh.setTestingValidation(ch.isTestingValidation());
             newCh.setTargetDates(ch.isTargetDates());
-            newCh.setAddmember(ch.isAddmember());
+            newCh.setAddMember(ch.isAddMember());
+
+            newCh.setWebCtrlAccess(ch.isWebCtrlAccess());
+            newCh.setWebCtrlKey(ch.isWebCtrlKey());
+            newCh.setBacLicenses(ch.isBacLicenses());
+            newCh.setUpgradeSystem(ch.isUpgradeSystem());
+            newCh.setCleanOutWebRoot(ch.isCleanOutWebRoot());
+            newCh.setNotUsingDerby(ch.isNotUsingDerby());
+            newCh.setScheduleMigration(ch.isScheduleMigration());
+
+            newCh.setUpdateAllDevice(ch.isUpdateAllDevice());
+
+            newCh.setOrderTosibox(ch.isOrderTosibox());
+            newCh.setDigitalNetTicket(ch.isDigitalNetTicket());
+            newCh.setStaticIpAddress(ch.isStaticIpAddress());
+            newCh.setSwitchPort(ch.isSwitchPort());
+            newCh.setFirewallRules(ch.isFirewallRules());
+            newCh.setConfigureTosibox(ch.isConfigureTosibox());
+            newCh.setShipTosibox(ch.isShipTosibox());
+            newCh.setVeryfyTosiboxbyOwner(ch.isVeryfyTosiboxbyOwner());
+
+            newCh.setImplementAwsNetwork(ch.isImplementAwsNetwork());
+            newCh.setCreateEmptyAwsSystem(ch.isCreateEmptyAwsSystem());
+            newCh.setGiveToolAndPassword(ch.isGiveToolAndPassword());
+            newCh.setGiveOwnerWebCtrlUrl(ch.isGiveOwnerWebCtrlUrl());
+
+            newCh.setUpdateBbmd(ch.isUpdateBbmd());
+            newCh.setChangeRoute(ch.isChangeRoute());
+            newCh.setMakeBbmdDevice(ch.isMakeBbmdDevice());
+
             checkListRepository.save(newCh);
         }else{
             newCh= new CheckList();
@@ -87,7 +116,35 @@ public class CheckListServiceImpl implements CheckListService {
             newCh.setChangeRoute(ch.isChangeRoute());
             newCh.setTestingValidation(ch.isTestingValidation());
             newCh.setTargetDates(ch.isTargetDates());
-            newCh.setAddmember(ch.isAddmember());
+            newCh.setAddMember(ch.isAddMember());
+
+            newCh.setWebCtrlAccess(ch.isWebCtrlAccess());
+            newCh.setWebCtrlKey(ch.isWebCtrlKey());
+            newCh.setBacLicenses(ch.isBacLicenses());
+            newCh.setUpgradeSystem(ch.isUpgradeSystem());
+            newCh.setCleanOutWebRoot(ch.isCleanOutWebRoot());
+            newCh.setNotUsingDerby(ch.isNotUsingDerby());
+            newCh.setScheduleMigration(ch.isScheduleMigration());
+
+            newCh.setUpdateAllDevice(ch.isUpdateAllDevice());
+
+            newCh.setOrderTosibox(ch.isOrderTosibox());
+            newCh.setDigitalNetTicket(ch.isDigitalNetTicket());
+            newCh.setStaticIpAddress(ch.isStaticIpAddress());
+            newCh.setSwitchPort(ch.isSwitchPort());
+            newCh.setFirewallRules(ch.isFirewallRules());
+            newCh.setConfigureTosibox(ch.isConfigureTosibox());
+            newCh.setShipTosibox(ch.isShipTosibox());
+            newCh.setVeryfyTosiboxbyOwner(ch.isVeryfyTosiboxbyOwner());
+
+            newCh.setImplementAwsNetwork(ch.isImplementAwsNetwork());
+            newCh.setCreateEmptyAwsSystem(ch.isCreateEmptyAwsSystem());
+            newCh.setGiveToolAndPassword(ch.isGiveToolAndPassword());
+            newCh.setGiveOwnerWebCtrlUrl(ch.isGiveOwnerWebCtrlUrl());
+
+            newCh.setUpdateBbmd(ch.isUpdateBbmd());
+            newCh.setChangeRoute(ch.isChangeRoute());
+            newCh.setMakeBbmdDevice(ch.isMakeBbmdDevice());
             checkListRepository.save(newCh);
         }
         return newCh;
@@ -123,7 +180,35 @@ public class CheckListServiceImpl implements CheckListService {
             newCh.setChangeRoute(ch.isChangeRoute());
             newCh.setTestingValidation(ch.isTestingValidation());
             newCh.setTargetDates(ch.isTargetDates());
-            newCh.setAddmember(ch.isAddmember());
+            newCh.setAddMember(ch.isAddMember());
+
+            newCh.setWebCtrlAccess(ch.isWebCtrlAccess());
+            newCh.setWebCtrlKey(ch.isWebCtrlKey());
+            newCh.setBacLicenses(ch.isBacLicenses());
+            newCh.setUpgradeSystem(ch.isUpgradeSystem());
+            newCh.setCleanOutWebRoot(ch.isCleanOutWebRoot());
+            newCh.setNotUsingDerby(ch.isNotUsingDerby());
+            newCh.setScheduleMigration(ch.isScheduleMigration());
+
+            newCh.setUpdateAllDevice(ch.isUpdateAllDevice());
+
+            newCh.setOrderTosibox(ch.isOrderTosibox());
+            newCh.setDigitalNetTicket(ch.isDigitalNetTicket());
+            newCh.setStaticIpAddress(ch.isStaticIpAddress());
+            newCh.setSwitchPort(ch.isSwitchPort());
+            newCh.setFirewallRules(ch.isFirewallRules());
+            newCh.setConfigureTosibox(ch.isConfigureTosibox());
+            newCh.setShipTosibox(ch.isShipTosibox());
+            newCh.setVeryfyTosiboxbyOwner(ch.isVeryfyTosiboxbyOwner());
+
+            newCh.setImplementAwsNetwork(ch.isImplementAwsNetwork());
+            newCh.setCreateEmptyAwsSystem(ch.isCreateEmptyAwsSystem());
+            newCh.setGiveToolAndPassword(ch.isGiveToolAndPassword());
+            newCh.setGiveOwnerWebCtrlUrl(ch.isGiveOwnerWebCtrlUrl());
+
+            newCh.setUpdateBbmd(ch.isUpdateBbmd());
+            newCh.setChangeRoute(ch.isChangeRoute());
+            newCh.setMakeBbmdDevice(ch.isMakeBbmdDevice());
             checkListRepository.save(newCh);
         }
         return newCh;

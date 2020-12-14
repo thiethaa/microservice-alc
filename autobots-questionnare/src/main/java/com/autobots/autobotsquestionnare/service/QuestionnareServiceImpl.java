@@ -49,6 +49,12 @@ public class QuestionnareServiceImpl implements QuestionnareService{
             newQuestionnare.setPointsNo(questionnare.getPointsNo());
             newQuestionnare.setSourceNo(questionnare.getSourceNo());
             newQuestionnare.setSampleNo(questionnare.getSampleNo());
+            newQuestionnare.setControllerModel(questionnare.getControllerModel());
+            newQuestionnare.setControllerIpAddress(questionnare.getControllerIpAddress());
+            newQuestionnare.setControllerFirmware(questionnare.getControllerFirmware());
+            newQuestionnare.setBacNet(questionnare.getBacNet());
+            newQuestionnare.setInternetProxy(questionnare.getInternetProxy());
+            newQuestionnare.setHardwareVpn(questionnare.getHardwareVpn());
             questionnareRepository.save(newQuestionnare);
         }else {
             newQuestionnare = new Questionnare();
@@ -67,6 +73,12 @@ public class QuestionnareServiceImpl implements QuestionnareService{
             newQuestionnare.setPointsNo(questionnare.getPointsNo());
             newQuestionnare.setSourceNo(questionnare.getSourceNo());
             newQuestionnare.setSampleNo(questionnare.getSampleNo());
+            newQuestionnare.setControllerModel(questionnare.getControllerModel());
+            newQuestionnare.setControllerIpAddress(questionnare.getControllerIpAddress());
+            newQuestionnare.setControllerFirmware(questionnare.getControllerFirmware());
+            newQuestionnare.setBacNet(questionnare.getBacNet());
+            newQuestionnare.setInternetProxy(questionnare.getInternetProxy());
+            newQuestionnare.setHardwareVpn(questionnare.getHardwareVpn());
             questionnareRepository.save(newQuestionnare);
         }
         return newQuestionnare;
@@ -93,6 +105,12 @@ public class QuestionnareServiceImpl implements QuestionnareService{
             newQuestionnare.setPointsNo(questionnare.getPointsNo());
             newQuestionnare.setSourceNo(questionnare.getSourceNo());
             newQuestionnare.setSampleNo(questionnare.getSampleNo());
+            newQuestionnare.setControllerModel(questionnare.getControllerModel());
+            newQuestionnare.setControllerIpAddress(questionnare.getControllerIpAddress());
+            newQuestionnare.setControllerFirmware(questionnare.getControllerFirmware());
+            newQuestionnare.setBacNet(questionnare.getBacNet());
+            newQuestionnare.setInternetProxy(questionnare.getInternetProxy());
+            newQuestionnare.setHardwareVpn(questionnare.getHardwareVpn());
             questionnareRepository.save(newQuestionnare);
         }
         return newQuestionnare;
