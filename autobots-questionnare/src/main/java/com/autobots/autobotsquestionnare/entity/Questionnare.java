@@ -33,8 +33,4 @@ public class Questionnare {
     private String bacNet;
     private String internetProxy;
     private String hardwareVpn;
-
-
-
-
 }

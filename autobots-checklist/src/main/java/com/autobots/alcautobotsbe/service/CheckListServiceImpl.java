@@ -86,8 +86,82 @@ public class CheckListServiceImpl implements CheckListService {
             newCh.setGiveOwnerWebCtrlUrl(ch.isGiveOwnerWebCtrlUrl());
 
             newCh.setUpdateBbmd(ch.isUpdateBbmd());
-            newCh.setChangeRoute(ch.isChangeRoute());
+            newCh.setDefaultRoute(ch.isDefaultRoute());
             newCh.setMakeBbmdDevice(ch.isMakeBbmdDevice());
+
+            newCh.setAutomatedTestPotential(ch.isAutomatedTestPotential());
+            newCh.setDbTrendSetting(ch.isDbTrendSetting());
+            newCh.setRngTrendNo(ch.isRngTrendNo());
+            newCh.setProgramToDownload(ch.isProgramToDownload());
+            newCh.setCreateAlarm(ch.isCreateAlarm());
+            newCh.setJordanToSoap(ch.isJordanToSoap());
+            newCh.setAskSteveForAutoTest(ch.isAskSteveForAutoTest());
+
+            newCh.setWebCtrlOwnerAction(ch.isWebCtrlOwnerAction());
+            newCh.setDisableLdap(ch.isDisableLdap());
+            newCh.setStopControllerConnection(ch.isStopControllerConnection());
+            newCh.setSystemShutDown(ch.isSystemShutDown());
+            newCh.setRunCloudTool(ch.isRunCloudTool());
+            newCh.setDanDocSize(ch.isDanDocSize());
+            newCh.setCopyAndRunTool(ch.isCopyAndRunTool());
+            newCh.setCopyArtifact(ch.isCopyArtifact());
+            newCh.setFileToEfs(ch.isFileToEfs());
+            newCh.setNavigateToEsfFile(ch.isNavigateToEsfFile());
+            newCh.setRunAwsS3(ch.isRunAwsS3());
+
+            newCh.setImportAndConfigData(ch.isImportAndConfigData());
+            newCh.setEditContainerProps(ch.isEditContainerProps());
+            newCh.setStopWebCtrlTask(ch.isStopWebCtrlTask());
+
+            newCh.setTestSystemWithStopConn(ch.isTestSystemWithStopConn());
+            newCh.setVerifyAddons(ch.isVerifyAddons());
+            newCh.setChangeProxySet(ch.isChangeProxySet());
+            newCh.setCheckTrendExport(ch.isCheckTrendExport());
+            newCh.setWalkThroughUi(ch.isWalkThroughUi());
+            newCh.setClickStatisticBtn(ch.isClickStatisticBtn());
+            newCh.setCheckOperator(ch.isCheckOperator());
+            newCh.setViewAlarms(ch.isViewAlarms());
+            newCh.setRunSecurity(ch.isRunSecurity());
+            newCh.setViewOneTrend(ch.isViewOneTrend());
+            newCh.setConfimServiceStatus(ch.isConfimServiceStatus());
+            newCh.setExportTrend(ch.isExportTrend());
+            newCh.setDanPingBbmd(ch.isDanPingBbmd());
+
+            newCh.setChangeIpSetting(ch.isChangeIpSetting());
+            newCh.setKeepOnlyPort(ch.isKeepOnlyPort());
+            newCh.setForceRegistration(ch.isForceRegistration());
+            newCh.setEnableDevice(ch.isEnableDevice());
+            newCh.setDontUseBackUpBbmd(ch.isDontUseBackUpBbmd());
+            newCh.setTuning(ch.isTuning());
+            newCh.setTimeOut6s(ch.isTimeOut6s());
+            newCh.setAttempts10(ch.isAttempts10());
+            newCh.setSync72m(ch.isSync72m());
+            newCh.setRegisterFd(ch.isRegisterFd());
+
+            newCh.setStartConn(ch.isStartConn());
+
+            newCh.setConfirmConnectivity(ch.isConfirmConnectivity());
+            newCh.setSeeColors(ch.isSeeColors());
+            newCh.setRunModstat(ch.isRunModstat());
+            newCh.setSeeDataOnEquipment(ch.isSeeDataOnEquipment());
+            newCh.setCaptureTrendCount(ch.isCaptureTrendCount());
+            newCh.setShowDbValues(ch.isShowDbValues());
+            newCh.setPointLockAlarm(ch.isPointLockAlarm());
+            newCh.setConfigureTrend1m(ch.isConfigureTrend1m());
+            newCh.setEnableTrendHistorian(ch.isEnableTrendHistorian());
+            newCh.setForceAlarm(ch.isForceAlarm());
+            newCh.setVerifyDeviceBind(ch.isVerifyDeviceBind());
+
+            newCh.setPostLaunchWebCtrl(ch.isPostLaunchWebCtrl());
+            newCh.setChangeServerEmail(ch.isChangeServerEmail());
+            newCh.setChangeMailSetup(ch.isChangeMailSetup());
+            newCh.setChangePort(ch.isChangePort());
+            newCh.setSecureTsl(ch.isSecureTsl());
+            newCh.setAddMailUser(ch.isAddMailUser());
+            newCh.setChangeEmailAddress(ch.isChangeEmailAddress());
+
+            newCh.setTestSystemWithOwner(ch.isTestSystemWithOwner());
+            newCh.setEmailNotification(ch.isEmailNotification());
 
             checkListRepository.save(newCh);
         }else{
@@ -143,8 +217,83 @@ public class CheckListServiceImpl implements CheckListService {
             newCh.setGiveOwnerWebCtrlUrl(ch.isGiveOwnerWebCtrlUrl());
 
             newCh.setUpdateBbmd(ch.isUpdateBbmd());
-            newCh.setChangeRoute(ch.isChangeRoute());
+            newCh.setDefaultRoute(ch.isDefaultRoute());
             newCh.setMakeBbmdDevice(ch.isMakeBbmdDevice());
+
+            newCh.setAutomatedTestPotential(ch.isAutomatedTestPotential());
+            newCh.setDbTrendSetting(ch.isDbTrendSetting());
+            newCh.setRngTrendNo(ch.isRngTrendNo());
+            newCh.setProgramToDownload(ch.isProgramToDownload());
+            newCh.setCreateAlarm(ch.isCreateAlarm());
+            newCh.setJordanToSoap(ch.isJordanToSoap());
+            newCh.setAskSteveForAutoTest(ch.isAskSteveForAutoTest());
+
+            newCh.setWebCtrlOwnerAction(ch.isWebCtrlOwnerAction());
+            newCh.setDisableLdap(ch.isDisableLdap());
+            newCh.setStopControllerConnection(ch.isStopControllerConnection());
+            newCh.setSystemShutDown(ch.isSystemShutDown());
+            newCh.setRunCloudTool(ch.isRunCloudTool());
+            newCh.setDanDocSize(ch.isDanDocSize());
+            newCh.setCopyAndRunTool(ch.isCopyAndRunTool());
+            newCh.setCopyArtifact(ch.isCopyArtifact());
+            newCh.setFileToEfs(ch.isFileToEfs());
+            newCh.setNavigateToEsfFile(ch.isNavigateToEsfFile());
+            newCh.setRunAwsS3(ch.isRunAwsS3());
+
+            newCh.setImportAndConfigData(ch.isImportAndConfigData());
+            newCh.setEditContainerProps(ch.isEditContainerProps());
+            newCh.setStopWebCtrlTask(ch.isStopWebCtrlTask());
+
+            newCh.setTestSystemWithStopConn(ch.isTestSystemWithStopConn());
+            newCh.setVerifyAddons(ch.isVerifyAddons());
+            newCh.setChangeProxySet(ch.isChangeProxySet());
+            newCh.setCheckTrendExport(ch.isCheckTrendExport());
+            newCh.setWalkThroughUi(ch.isWalkThroughUi());
+            newCh.setClickStatisticBtn(ch.isClickStatisticBtn());
+            newCh.setCheckOperator(ch.isCheckOperator());
+            newCh.setViewAlarms(ch.isViewAlarms());
+            newCh.setRunSecurity(ch.isRunSecurity());
+            newCh.setViewOneTrend(ch.isViewOneTrend());
+            newCh.setConfimServiceStatus(ch.isConfimServiceStatus());
+            newCh.setExportTrend(ch.isExportTrend());
+            newCh.setDanPingBbmd(ch.isDanPingBbmd());
+
+            newCh.setChangeIpSetting(ch.isChangeIpSetting());
+            newCh.setKeepOnlyPort(ch.isKeepOnlyPort());
+            newCh.setForceRegistration(ch.isForceRegistration());
+            newCh.setEnableDevice(ch.isEnableDevice());
+            newCh.setDontUseBackUpBbmd(ch.isDontUseBackUpBbmd());
+            newCh.setTuning(ch.isTuning());
+            newCh.setTimeOut6s(ch.isTimeOut6s());
+            newCh.setAttempts10(ch.isAttempts10());
+            newCh.setSync72m(ch.isSync72m());
+            newCh.setRegisterFd(ch.isRegisterFd());
+
+            newCh.setStartConn(ch.isStartConn());
+
+            newCh.setConfirmConnectivity(ch.isConfirmConnectivity());
+            newCh.setSeeColors(ch.isSeeColors());
+            newCh.setRunModstat(ch.isRunModstat());
+            newCh.setSeeDataOnEquipment(ch.isSeeDataOnEquipment());
+            newCh.setCaptureTrendCount(ch.isCaptureTrendCount());
+            newCh.setShowDbValues(ch.isShowDbValues());
+            newCh.setPointLockAlarm(ch.isPointLockAlarm());
+            newCh.setConfigureTrend1m(ch.isConfigureTrend1m());
+            newCh.setEnableTrendHistorian(ch.isEnableTrendHistorian());
+            newCh.setForceAlarm(ch.isForceAlarm());
+            newCh.setVerifyDeviceBind(ch.isVerifyDeviceBind());
+
+            newCh.setPostLaunchWebCtrl(ch.isPostLaunchWebCtrl());
+            newCh.setChangeServerEmail(ch.isChangeServerEmail());
+            newCh.setChangeMailSetup(ch.isChangeMailSetup());
+            newCh.setChangePort(ch.isChangePort());
+            newCh.setSecureTsl(ch.isSecureTsl());
+            newCh.setAddMailUser(ch.isAddMailUser());
+            newCh.setChangeEmailAddress(ch.isChangeEmailAddress());
+
+            newCh.setTestSystemWithOwner(ch.isTestSystemWithOwner());
+            newCh.setEmailNotification(ch.isEmailNotification());
+
             checkListRepository.save(newCh);
         }
         return newCh;
@@ -207,8 +356,83 @@ public class CheckListServiceImpl implements CheckListService {
             newCh.setGiveOwnerWebCtrlUrl(ch.isGiveOwnerWebCtrlUrl());
 
             newCh.setUpdateBbmd(ch.isUpdateBbmd());
-            newCh.setChangeRoute(ch.isChangeRoute());
+            newCh.setDefaultRoute(ch.isDefaultRoute());
             newCh.setMakeBbmdDevice(ch.isMakeBbmdDevice());
+
+            newCh.setAutomatedTestPotential(ch.isAutomatedTestPotential());
+            newCh.setDbTrendSetting(ch.isDbTrendSetting());
+            newCh.setRngTrendNo(ch.isRngTrendNo());
+            newCh.setProgramToDownload(ch.isProgramToDownload());
+            newCh.setCreateAlarm(ch.isCreateAlarm());
+            newCh.setJordanToSoap(ch.isJordanToSoap());
+            newCh.setAskSteveForAutoTest(ch.isAskSteveForAutoTest());
+
+            newCh.setWebCtrlOwnerAction(ch.isWebCtrlOwnerAction());
+            newCh.setDisableLdap(ch.isDisableLdap());
+            newCh.setStopControllerConnection(ch.isStopControllerConnection());
+            newCh.setSystemShutDown(ch.isSystemShutDown());
+            newCh.setRunCloudTool(ch.isRunCloudTool());
+            newCh.setDanDocSize(ch.isDanDocSize());
+            newCh.setCopyAndRunTool(ch.isCopyAndRunTool());
+            newCh.setCopyArtifact(ch.isCopyArtifact());
+            newCh.setFileToEfs(ch.isFileToEfs());
+            newCh.setNavigateToEsfFile(ch.isNavigateToEsfFile());
+            newCh.setRunAwsS3(ch.isRunAwsS3());
+
+            newCh.setImportAndConfigData(ch.isImportAndConfigData());
+            newCh.setEditContainerProps(ch.isEditContainerProps());
+            newCh.setStopWebCtrlTask(ch.isStopWebCtrlTask());
+
+            newCh.setTestSystemWithStopConn(ch.isTestSystemWithStopConn());
+            newCh.setVerifyAddons(ch.isVerifyAddons());
+            newCh.setChangeProxySet(ch.isChangeProxySet());
+            newCh.setCheckTrendExport(ch.isCheckTrendExport());
+            newCh.setWalkThroughUi(ch.isWalkThroughUi());
+            newCh.setClickStatisticBtn(ch.isClickStatisticBtn());
+            newCh.setCheckOperator(ch.isCheckOperator());
+            newCh.setViewAlarms(ch.isViewAlarms());
+            newCh.setRunSecurity(ch.isRunSecurity());
+            newCh.setViewOneTrend(ch.isViewOneTrend());
+            newCh.setConfimServiceStatus(ch.isConfimServiceStatus());
+            newCh.setExportTrend(ch.isExportTrend());
+            newCh.setDanPingBbmd(ch.isDanPingBbmd());
+
+            newCh.setChangeIpSetting(ch.isChangeIpSetting());
+            newCh.setKeepOnlyPort(ch.isKeepOnlyPort());
+            newCh.setForceRegistration(ch.isForceRegistration());
+            newCh.setEnableDevice(ch.isEnableDevice());
+            newCh.setDontUseBackUpBbmd(ch.isDontUseBackUpBbmd());
+            newCh.setTuning(ch.isTuning());
+            newCh.setTimeOut6s(ch.isTimeOut6s());
+            newCh.setAttempts10(ch.isAttempts10());
+            newCh.setSync72m(ch.isSync72m());
+            newCh.setRegisterFd(ch.isRegisterFd());
+
+            newCh.setStartConn(ch.isStartConn());
+
+            newCh.setConfirmConnectivity(ch.isConfirmConnectivity());
+            newCh.setSeeColors(ch.isSeeColors());
+            newCh.setRunModstat(ch.isRunModstat());
+            newCh.setSeeDataOnEquipment(ch.isSeeDataOnEquipment());
+            newCh.setCaptureTrendCount(ch.isCaptureTrendCount());
+            newCh.setShowDbValues(ch.isShowDbValues());
+            newCh.setPointLockAlarm(ch.isPointLockAlarm());
+            newCh.setConfigureTrend1m(ch.isConfigureTrend1m());
+            newCh.setEnableTrendHistorian(ch.isEnableTrendHistorian());
+            newCh.setForceAlarm(ch.isForceAlarm());
+            newCh.setVerifyDeviceBind(ch.isVerifyDeviceBind());
+
+            newCh.setPostLaunchWebCtrl(ch.isPostLaunchWebCtrl());
+            newCh.setChangeServerEmail(ch.isChangeServerEmail());
+            newCh.setChangeMailSetup(ch.isChangeMailSetup());
+            newCh.setChangePort(ch.isChangePort());
+            newCh.setSecureTsl(ch.isSecureTsl());
+            newCh.setAddMailUser(ch.isAddMailUser());
+            newCh.setChangeEmailAddress(ch.isChangeEmailAddress());
+
+            newCh.setTestSystemWithOwner(ch.isTestSystemWithOwner());
+            newCh.setEmailNotification(ch.isEmailNotification());
+
             checkListRepository.save(newCh);
         }
         return newCh;
